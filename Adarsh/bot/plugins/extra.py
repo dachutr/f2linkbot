@@ -20,7 +20,7 @@ async def stats(bot, update):
   cpuUsage = psutil.cpu_percent(interval=0.5)
   memory = psutil.virtual_memory().percent
   disk = psutil.disk_usage('/').percent
-  botstats = f'<b>Bot Uptime:</b> {currentTime}\n' \
+  botstats = f'<b>Server Uptime:</b> {currentTime}\n' \
             f'<b>Total disk space:</b> {total}\n' \
             f'<b>Used:</b> {used}  ' \
             f'<b>Free:</b> {free}\n\n' \
